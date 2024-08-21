@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  background-color: #093545;
+  color: white;
+  position: relative;
+}
+
+input:-webkit-autofill {
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: white !important;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+[data-slot="input-wrapper"] {
+  background-color: #224957 !important;
+  border-radius: 10px !important;
+  height: 45px !important;
+  padding: 0 16px;
+}
+
+[data-slot="input-wrapper"] input::placeholder {
+  color: #e6e6e6 !important;
+}
+
+[data-slot="input-wrapper"] input {
+  color: white !important;
+  outline: none;
+}
+
+[data-focus-visible="true"] {
+  box-shadow: none !important;
+}
+
+.checkbox span::before {
+  border: none;
+  background-color: #224957 !important;
+  border-radius: 3px;
+}
+
+.checkbox span {
+  color: white;
+  font-size: 14px;
+}
+
+.pagination ul li {
+  background-color: #092c39 !important;
+  color: white !important;
+  font-weight: 700 !important;
+}
+.pagination ul span {
+  font-weight: 700;
+}
+.pagination ul li svg {
+  color: white;
+}
